@@ -3,6 +3,7 @@
 $album-size: 300px;
 
 .album {
+  position: relative;
   margin: 20px;
   width: $album-size;
   height: $album-size;
