@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/sass-material-colors/sass/sass-material-colors';
+@import '../node_modules/sass-material-colors/sass/sass-material-colors-classes';
+@import 'shapes';
+@import 'album';
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: material-color('amber', '50');
+}

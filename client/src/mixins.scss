@@ -1,0 +1,19 @@
+@mixin border-radius($args) {
+  -moz-border-radius: $args;
+  -webkit-border-radius: $args;
+  border-radius: $args;
+}
+
+@mixin box-shadow($args) {
+  -moz-box-shadow: $args;
+  -webkit-box-shadow: $args;
+  box-shadow: $args;
+}
+
+@mixin transform($args) {
+  -o-transform: $args;
+  -ms-transofrm: $args;
+  -moz-transform: $args;
+  -webkit-transform: $args;
+  transform: $args;
+}
