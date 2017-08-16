@@ -1,27 +1,3 @@
-<div class="album bg-color-grey-300">
-  <div class="shape circle bg-color-red-300"></div>
-</div>
-<div class="album bg-color-grey-500">
-  <div class="shape square bg-color-yellow-600"></div>
-</div>
-<div class="album bg-color-yellow-500">
-  <div class="shape square-round bg-color-orange-900"></div>
-</div>
-<div class="album bg-color-grey-900">
-  <div class="shape square-rounder bg-color-pink-100"></div>
-</div>
-<div class="album bg-color-purple-900">
-  <div class="shape parallelogram-left bg-color-green-300"></div>
-</div>
-<div class="album bg-color-yellow-900">
-  <div class="shape parallelogram-right bg-color-orange-300"></div>
-</div>
-<div class="album bg-color-light-blue-900">
-  <div class="shape diamond bg-color-orange-500"></div>
-</div>
-<div class="album bg-color-amber-300">
-  <div class="shape diamond-round bg-color-grey-500"></div>
-</div>
-<div class="album bg-color-red-300">
-  <div class="shape diamond-rounder bg-color-pink-800"></div>
+<div *ngFor="let number of numbers" class="album bg-color-{{ albumService.getRandomColor() }}-{{ albumService.getRandomColorVariant() }}">
+  <div class="shape {{ albumService.getRandomShapeVariants() }} {{ albumService.getRandomShape() }} bg-color-{{ albumService.getRandomColor() }}-{{ albumService.getRandomColorVariant() }}"></div>
 </div>

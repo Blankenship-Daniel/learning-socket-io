@@ -8,6 +8,7 @@ import { routes } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AlbumComponent } from './album/album.component';
+import { AlbumService } from './album/album.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { AlbumComponent } from './album/album.component';
       useHash: false
     })
   ],
-  providers: [],
+  providers: [
+    AlbumService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

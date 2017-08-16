@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlbumService } from './album.service';
 
 @Component({
   selector: 'app-album',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./album.component.scss']
 })
 export class AlbumComponent implements OnInit {
+  private numbers : number[];
 
-  constructor() { }
+  constructor(private albumService : AlbumService) {
+    this.numbers = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+  }
 
   ngOnInit() {
   }
-
 }

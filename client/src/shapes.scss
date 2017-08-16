@@ -8,40 +8,24 @@
   @include transform(skew(20deg));
 }
 
-.parallelogram-left-round {
-  @include transform(skew(20deg));
-  @include border-radius(25px);
-}
-
-.parallelogram-left-rounder {
-  @include transform(skew(20deg));
-  @include border-radius(50px);
-}
-
 .parallelogram-right {
   @include transform(skew(-20deg));
 }
 
 .square { }
 
-.square-round {
-  @include border-radius(25px);
-}
-
-.square-rounder {
-  @include border-radius(50px);
-}
-
 .diamond {
   @include transform(rotate(45deg));
 }
 
-.diamond-round {
-  @include transform(rotate(45deg));
-  @include border-radius(25px);
+.round {
+  @include border-radius(15px);
 }
 
-.diamond-rounder {
-  @include transform(rotate(45deg));
-  @include border-radius(50px);
+.rounder {
+  @include border-radius(30px);
+}
+
+.roundest {
+  @include border-radius(45px);
 }
